@@ -12,7 +12,7 @@ export const Header = () => {
     return  (
         <AppBar position="static">
             <toolbar className={classes.toolbar}>
-                <Box display="flex" justifyContent="center" alignItems="center">
+                <Box display="flex" justifyContent="center" alignItems="center" >
                         <Typography variant="h5">
                             Oxypetalum7's Portfolio
                         </Typography>
