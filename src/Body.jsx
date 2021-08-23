@@ -19,24 +19,25 @@ const useStyle = makeStyles (
             display: "flex",
         },
         Profile_content: {
-            padding: "2rem 0",
+            padding: "3rem 0",
             paddingLeft: "5vw",
             width: "30vw",
             verticalAlign: "middle"
         },
         Profile_Media: {
             textAlign: "center",
-            margin: "auto 0",
+            margin: "auto auto",
             width: "25vw",
         },
         Icon: {
-            width: "12rem",
-            height: "12rem",
+            width: "50%",
+            height: "50%",
             borderRadius: "50%",
             boxShadow: "1px 4px 4px 0 rgba(0, 0, 0, .2)"
         }
     }
 )
+
 export const Body = () => {
     const classes = useStyle()
     return (
@@ -50,21 +51,21 @@ export const Body = () => {
                         <Box className={classes.Profile_content}>
                             <Grid container justifyContent="center" spacing={2}>
                                 <Grid item xs={12}>
-                                    <Typography variant={Body}>
+                                    <Typography>
                                         HandleName : きーちゃん / Oxypetalum7
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant={Body}>
+                                    <Typography>
                                         所属 : 公立はこだて未来大学  情報システムコース 3年
                                     </Typography>
                                 </Grid>
-                                <Grid item xs={12} variant={Body}>
+                                <Grid item xs={12}>
                                     <Typography>
                                         趣味 : DTM, 写真撮影
                                     </Typography>
                                 </Grid>
-                                <Grid item xs={12} variant={Body}>
+                                <Grid item xs={12}>
                                     <Typography>
                                         キーワード: Webフロントエンド, アジャイル開発, スクラム
                                     </Typography>

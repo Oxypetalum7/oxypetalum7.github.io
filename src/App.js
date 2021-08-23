@@ -1,7 +1,15 @@
-import './App.css';
 import { useEffect } from 'react';
-import {Header} from "./Header.js"
-import {Body} from "./Body.js"
+import {Header} from "./Header.jsx"
+import {Body} from "./Body.jsx"
+import { createTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+import './App.css'
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Noto Sans JP'
+  }
+})
 
 const App = () => {
 
@@ -10,10 +18,11 @@ const App = () => {
   })
   
   return (
-    <div className="App">
-      <Header/>
-      <Body/>
-    </div>
+    <ThemeProvider theme={theme}>
+          <Header/>
+          <Body/>
+    </ThemeProvider>
+
   );
 }
 
