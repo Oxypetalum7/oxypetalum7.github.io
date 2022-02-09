@@ -1,15 +1,9 @@
 import { useEffect } from 'react';
-import {Header} from "./Header.jsx"
-import {Body} from "./Body.jsx"
-import { createTheme } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/styles';
+import {Header} from "./Header"
+import {Body} from "./Body"
+import { Activities } from './Activities'
+import { createTheme, adaptV4Theme } from '@mui/material';
 import './App.css'
-
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Noto Sans JP'
-  }
-})
 
 const App = () => {
 
@@ -18,11 +12,11 @@ const App = () => {
   })
   
   return (
-    <ThemeProvider theme={theme}>
-          <Header/>
-          <Body/>
-    </ThemeProvider>
-
+    <div>
+      <Header/>
+      <Body/>
+      <Activities/>
+    </div>
   );
 }
 
