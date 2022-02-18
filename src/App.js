@@ -7,6 +7,7 @@ import Activity from './Activity';
 import Works from './Works';
 import Link from './Link';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 const theme = createTheme({
     palette: {
       primary: {
