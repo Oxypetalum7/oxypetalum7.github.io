@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0cad5d1.css",
+    "main.js": "/static/js/main.dcc5c6f5.js",
+    "static/js/787.228045fc.chunk.js": "/static/js/787.228045fc.chunk.js",
+    "static/media/d-pBot.mp4": "/static/media/d-pBot.d827e40d0a396706057d.mp4",
+    "static/media/amabie_anm.gif": "/static/media/amabie_anm.5a9e9c30cf5c42cc0593.gif",
+    "static/media/IMG_2105.JPG": "/static/media/IMG_2105.c1e1ab3a499a08cdda6a.JPG",
+    "static/media/d-pBot_img.jpg": "/static/media/d-pBot_img.57cc2e18860ac1381998.jpg",
+    "static/media/DIDIT_IMG.png": "/static/media/DIDIT_IMG.385a4da10ddf4fe284e6.png",
+    "static/media/amabie_prj.png": "/static/media/amabie_prj.559845450766ac313a9c.png",
+    "static/media/Repair_it.png": "/static/media/Repair_it.6e0fcfce8cd9dddd37fd.png",
+    "static/media/RALAF_Flyer.png": "/static/media/RALAF_Flyer.63443dbec0891be4e63b.png",
+    "static/media/BROMIDI.png": "/static/media/BROMIDI.ba8ffadbf437c708c83e.png",
+    "static/media/icon.png": "/static/media/icon.30c731c2d1cf0f9b68c0.png",
+    "index.html": "/index.html",
+    "main.a0cad5d1.css.map": "/static/css/main.a0cad5d1.css.map",
+    "main.dcc5c6f5.js.map": "/static/js/main.dcc5c6f5.js.map",
+    "787.228045fc.chunk.js.map": "/static/js/787.228045fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0cad5d1.css",
+    "static/js/main.dcc5c6f5.js"
+  ]
+}
