@@ -18,7 +18,7 @@ const Header = () => {
                 <Toolbar>
                     <Link to="/">
                         <Typography variant="h5" noWrap component="div" sx={{ display: 'flex' }}>
-                            Kikawa Yutaro
+                            Oxypetalum7's Portfolio
                         </Typography>
                     </Link>
                     <Box sx={{ flexGrow: 1 }}/>

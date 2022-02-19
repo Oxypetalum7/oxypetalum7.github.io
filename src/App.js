@@ -28,11 +28,11 @@ const App = () => {
       <BrowserRouter>
         <ThemeProvider theme={theme}>
           <Routes>
-              <Route  exact path="/" element={<Home />} />
-              <Route path="/biography" element={<Biography />} />
-              <Route path="/activity" element={<Activity />} />
-              <Route path="/works" element={<Works />} />
-              <Route path="/link" element={<Link/>} />
+                <Route path="/" element={<Home />} />
+                <Route path="/biography" element={<Biography />} />
+                <Route path="/activity" element={<Activity />} />
+                <Route path="/works" element={<Works />} />
+                <Route path="/link" element={<Link/>} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

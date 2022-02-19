@@ -31,9 +31,9 @@ const Biography = () => {
                                     <Grid container justifyContent="center">
                                         <Stack sx={{my:2}} spacing={1} textAlign={{xs:"center", md:"justify"}}>
                                             <Stack>
-                                                <Typography variant="h6">Name</Typography>
+                                                <Typography variant="h6">Handle</Typography>
                                                 <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
-                                                    木川裕太郎
+                                                    Ki-chan / Oxypetalum7
                                                 </Typography>
                                             </Stack>
                                             <Stack>
