@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { Avatar, Grid, Paper, Typography, Container, Stack } from "@mui/material";
 import Header from "./Header"
-import Icon from "./assets/icon.png"
+import Icon from "../assets/icon.png"
 
 const Biography = () => {
     useEffect(() => {

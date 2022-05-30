@@ -1,6 +1,6 @@
 import { Grid, Typography, Paper, Box} from "@mui/material"
-import icon from "./assets/icon.png"
-import {useStyle} from './Styles'
+import icon from "../assets/icon.png"
+import {useStyle} from '../Styles'
 
 export const Body = () => {
     const classes = useStyle()

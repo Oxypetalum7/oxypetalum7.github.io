@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css'
-import Home from './Home';
-import Biography from './Biography';
-import Activity from './Activity';
-import Works from './Works';
-import Link from './Link';
+import Home from './components/Home';
+import Biography from './components/Biography';
+import Activity from './components/Activity';
+import Works from './components/Works';
+import Link from './components/Link';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({

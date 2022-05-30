@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from "./Header"
 import {  Container, Grid, Paper, Typography, Stack, Button, Chip, Icon, Dialog, DialogContent, IconButton} from "@mui/material";
-import BROMIDI_IMG from "./assets/BROMIDI.png";
-import DPBOT from "./assets/d-pBot.mp4"
-import DPBOT_IMG from "./assets/d-pBot_img.jpg"
-import REPAIR_IT_IMG from "./assets/Repair_it.png"
-import AMABIE_IMG from "./assets/amabie_prj.png"
-import AMABIE_GIF from "./assets/amabie_anm.gif"
-import DIDIT_IMG from "./assets/DIDIT_IMG.png"
-import RALAF_FLYER from "./assets/RALAF_Flyer.png"
+import BROMIDI_IMG from "../assets/BROMIDI.png";
+import DPBOT from "../assets/d-pBot.mp4"
+import DPBOT_IMG from "../assets/d-pBot_img.jpg"
+import REPAIR_IT_IMG from "../assets/Repair_it.png"
+import AMABIE_IMG from "../assets/amabie_prj.png"
+import AMABIE_GIF from "../assets/amabie_anm.gif"
+import DIDIT_IMG from "../assets/DIDIT_IMG.png"
+import RALAF_FLYER from "../assets/RALAF_Flyer.png"
 import { GitHub, Link, Close, PlayCircleFilled } from '@mui/icons-material';
 import { indigo, pink, green, lime, purple, cyan, yellow, blue, deepPurple, grey} from '@mui/material/colors';
 import {Player, ControlBar} from 'video-react';
