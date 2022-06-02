@@ -21,7 +21,7 @@ export const Body = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography>
-                                        所属 : 公立はこだて未来大学  情報システムコース 3年
+                                        所属 : 公立はこだて未来大学  情報システムコース 4年
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
