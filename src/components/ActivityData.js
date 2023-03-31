@@ -1,6 +1,7 @@
 const activities = {
     2019: [
         {
+            month: "Apr.",
             title: "公立はこだて未来大学　入学",
         }
     ],
@@ -42,7 +43,16 @@ const activities = {
         {
             month: "Mar.",
             title: "Open Hack U 2021 Online Vol.4 参加",
-            product: "Repair It!",
+            product: "笑撃",
+        },
+        {
+            month: "May",
+            title: "未来大賞 受賞",
+            product: 
+            [
+                "防災学習レクリエーションゲーム DID IT",
+                "未来大着席管理QRコード読み取り支援アプリ RALAF"
+            ]
         }
     ],
 }
