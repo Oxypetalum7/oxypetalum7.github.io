@@ -1,12 +1,31 @@
 import { useEffect } from "react"
 import { Avatar, Grid, Paper, Typography, Container, Stack } from "@mui/material";
 import Header from "./Header"
-import Icon from "./assets/icon.png"
+import Icon from "../assets/icon.png"
+
 
 const Biography = () => {
+    const birthday = {
+        year: 2000,
+        month: 7,
+        date: 25
+    }
+    
+    const today = new Date();
+
+    var thisYearsBirthday = new Date(today.getFullYear(), birthday.month-1, birthday.date);
+
+    var age = today.getFullYear() - birthday.year;
+
+    if(today < thisYearsBirthday){
+        //今年まだ誕生日が来ていない
+        age--;
+    }
+
     useEffect(() => {
         document.title = "Portfolio | Biography"
       })
+    
     return (
         <div>
             <Header />
@@ -45,13 +64,13 @@ const Biography = () => {
                                             <Stack>
                                                 <Typography  variant="h6">Grade</Typography>
                                                 <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
-                                                    B3 <Grid sx={{fontSize:'',fontWeight:'Bold', display:'inline'}}>(23卒予定)</Grid>
+                                                    B4 <Grid sx={{fontSize:'',fontWeight:'Bold', display:'inline'}}>(23卒予定)</Grid>
                                                 </Typography>
                                             </Stack>
                                             <Stack>
                                                 <Typography variant="h6">Age</Typography>
                                                 <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
-                                                    21
+                                                    {age}
                                                 </Typography>
                                             </Stack>
                                         </Stack>
@@ -60,14 +79,13 @@ const Biography = () => {
                             </Grid>
                             <Grid container justifyContent="center">
                                 <Grid item xs={8} sx={{py:4}}>
-                                    <Typography sx={{ lineHeight:'160%'}}>
+                                    <Typography sx={{ lineHeight:'200%'}}>
                                         　公立はこだて未来大学に通う情報系学生。
                                         小学生の時にDTM(Desk Top Music)に興味を持ち、独学でMIDIやDTMに関するソフトウェア等への知識をつけていく中で、ソフトウェアやデータの仕組みについて興味を持ち情報系への進学を決めました。
                                         大学入学後には個人やチームでのアプリケーション開発に取り組む他、DTM等のクリエイティブな活動も継続しており、「これは面白い」と思った事にはなんでも挑戦しています。
                                     </Typography>
                                 </Grid>
                             </Grid>
-
                         </Grid>
                     </Grid>
                 </Paper>

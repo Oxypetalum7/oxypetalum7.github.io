@@ -1,6 +1,6 @@
 import { Grid, Typography, Paper, Box} from "@mui/material"
-import icon from "./assets/icon.png"
-import {useStyle} from './Styles'
+import icon from "../assets/icon.png"
+import {useStyle} from '../Styles'
 
 export const Body = () => {
     const classes = useStyle()
@@ -21,7 +21,7 @@ export const Body = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography>
-                                        所属 : 公立はこだて未来大学  情報システムコース 3年
+                                        所属 : 公立はこだて未来大学  情報システムコース 4年
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
