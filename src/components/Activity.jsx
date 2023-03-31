@@ -26,13 +26,13 @@ const Activity = () => {
                 Object.keys(element).map(key => {
                     if (key === 'month') {
                         content.push(
-                            <Typography variant="h6" sx={{ fontWeight:'Bold', my:2}}>
+                            <Typography variant="h6" sx={{ fontWeight:'Bold', mt:1}}>
                                 {element[key]}
                             </Typography>
                         )
                     } else if (key === 'title') {
                         content.push(
-                            <Typography variant="h5" sx={{ my:1.6 }}>
+                            <Typography variant="h5" sx={{ my:1, fontWeight:'Bold' }}>
                                 <li>{ element[key] }</li>
                             </Typography>
                         )
@@ -44,7 +44,7 @@ const Activity = () => {
                                         <Typography sx={{ display:'inline' }}>
                                             PRODUCT &gt;&gt;&gt;&nbsp;
                                         </Typography>
-                                        <Typography variant="h5" sx={{ fontWeight:'Bold', display:'inline' }}>
+                                        <Typography variant="h6" sx={{ fontWeight:'Bold', display:'inline' }}>
                                             {child}
                                         </Typography>
                                     </div>
@@ -57,13 +57,20 @@ const Activity = () => {
                                     <Typography sx={{ display:'inline' }}>
                                         PRODUCT &gt;&gt;&gt;&nbsp;
                                     </Typography>
-                                    <Typography variant="h5" sx={{ fontWeight:'Bold', display:'inline' }}>
-                                    {element[key]}
+                                    <Typography variant="h6" sx={{ fontWeight:'Bold', display:'inline' }}>
+                                        {element[key]}
                                     </Typography>
                                 </div>
                             )
                         }
+                    } else if (key === 'reward') {
+                        content.push(
+                            <Typography variant="h6" sx={{ fontWeight:'Bold', my:0.2}}>
+                                {element[key]}
+                            </Typography>
+                        )
                     }
+
                     return null
                 })
             });
@@ -77,7 +84,7 @@ const Activity = () => {
             <Container maxWidth="xl">
                 <Paper sx={{my:16}}>
                     <Grid container direction="row" justifyContent="center">
-                        <Grid item sx={{py:2}}>
+                        <Grid item sx={{py:4, pb:12, px:{xs:2, md:16}}}>
                             <Grid item xs={12}>
                                 <Typography variant="h3" sx={{ fontWeight:'Bold', textAlign:'center'}}>
                                     Activity
