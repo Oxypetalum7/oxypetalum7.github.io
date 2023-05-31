@@ -32,7 +32,7 @@ const Biography = () => {
             <Container maxWidth="xl">
                 <Paper sx={{mt:16}}>
                     <Grid container direction="row" justifyContent="center">
-                        <Grid item sx={{py:2}}>
+                        <Grid item sx={{my:4}}>
                             <Grid item xs={12}>
                                 <Typography variant="h3" sx={{ fontWeight:'Bold', textAlign:'center'}}>
                                     Biography
@@ -48,23 +48,11 @@ const Biography = () => {
                                 </Grid>
                                 <Grid item xs={12} md={4}>
                                     <Grid container justifyContent="center">
-                                        <Stack sx={{my:2}} spacing={1} textAlign={{xs:"center", md:"justify"}}>
+                                        <Stack sx={{py:6}} spacing={1} textAlign={{xs:"center", md:"justify"}}>
                                             <Stack>
                                                 <Typography variant="h6">Handle</Typography>
                                                 <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
                                                     Ki-chan / Oxypetalum7
-                                                </Typography>
-                                            </Stack>
-                                            <Stack>
-                                                <Typography variant="h6">Institution</Typography>
-                                                <Typography variant="h5" sx={{ fontWeight:'Bold', lineHeight:'160%'}}>    
-                                                    公立はこだて未来大学<br/>システム情報科学部<br/>情報アーキテクチャ学科<br/>情報システムコース
-                                                </Typography>
-                                            </Stack>
-                                            <Stack>
-                                                <Typography  variant="h6">Grade</Typography>
-                                                <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
-                                                    B4 <Grid sx={{fontSize:'',fontWeight:'Bold', display:'inline'}}>(23卒予定)</Grid>
                                                 </Typography>
                                             </Stack>
                                             <Stack>
@@ -73,16 +61,22 @@ const Biography = () => {
                                                     {age}
                                                 </Typography>
                                             </Stack>
+                                            <Stack>
+                                                <Typography variant="h6">Job</Typography>
+                                                    <Typography variant="h5" sx={{ fontWeight:'Bold'}}>
+                                                        スマートフォンアプリエンジニア
+                                                    </Typography>
+                                            </Stack>
                                         </Stack>
                                     </Grid>
                                 </Grid>
                             </Grid>
                             <Grid container justifyContent="center">
-                                <Grid item xs={8} sx={{py:4}}>
+                                <Grid item xs={8} sx={{py:2}}>
                                     <Typography sx={{ lineHeight:'200%'}}>
-                                        　公立はこだて未来大学に通う情報系学生。
+                                        　公立はこだて未来大学 システム情報科学部 情報アーキテクチャ学科 情報システムコース 卒業。大学卒業後はIT企業にスマートフォンアプリエンジニアとして入社。
                                         小学生の時にDTM(Desk Top Music)に興味を持ち、独学でMIDIやDTMに関するソフトウェア等への知識をつけていく中で、ソフトウェアやデータの仕組みについて興味を持ち情報系への進学を決めました。
-                                        大学入学後には個人やチームでのアプリケーション開発に取り組む他、DTM等のクリエイティブな活動も継続しており、「これは面白い」と思った事にはなんでも挑戦しています。
+                                        大学入学後には個人やチームでのアプリケーション開発に取り組む他、DTM等のクリエイティブな活動も継続しており、「面白い」と思った事にはなんでも挑戦しています。
                                     </Typography>
                                 </Grid>
                             </Grid>

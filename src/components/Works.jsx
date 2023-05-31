@@ -8,6 +8,8 @@ import REPAIR_IT_IMG from "../assets/Repair_it.png"
 import AMABIE_IMG from "../assets/amabie_prj.png"
 import AMABIE_GIF from "../assets/amabie_anm.gif"
 import DIDIT_IMG from "../assets/DIDIT_IMG.png"
+import SHOGEKI_LOGO_IMG from "../assets/sho-geki_logo.png"
+import SHOGEKI_THUMBNAIL_IMG from "../assets/sho-geki_thumbnail.png"
 import RALAF_FLYER from "../assets/RALAF_Flyer.png"
 import { GitHub, Link, Close, PlayCircleFilled } from '@mui/icons-material';
 import { indigo, pink, green, lime, purple, cyan, yellow, blue, deepPurple, grey} from '@mui/material/colors';
@@ -31,20 +33,24 @@ const Works = () => {
                 <DialogContent>
                     {children}
                 </DialogContent>
-                {onClose ? (
+                {
+                onClose ? 
+                    (
                         <IconButton
-                        aria-label="close"
-                        onClick={onClose}
-                        sx={{
-                            position: 'absolute',
-                            right: 8,
-                            top: 8,
-                            color: grey[500],
-                        }}
+                            aria-label="close"
+                            onClick={onClose}
+                            sx=
+                            {{
+                                position: 'absolute',
+                                right: 8,
+                                top: 8,
+                                color: grey[500],
+                            }}
                         >
                         <Close sx={{ height:'3rem', width:'3rem'}}/>
                         </IconButton>
-                    ) : null}
+                    ) : null
+                }
             </Dialog>
         );
     };
@@ -418,7 +424,88 @@ const Works = () => {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            
+                            <Grid container justifyContent="space-around" sx={{py:4}}>
+                                <Grid item xs={10} md={5}>
+                                    <Typography variant="h6" sx={{ fontWeight:'Bold', my:1.6}}>
+                                        Open Hack U 2021 Online Vol.4 
+                                        <p>「Happy Hacking賞」受賞作品 </p>
+                                    </Typography>
+                                    <Typography  fontWeight='bold'>
+                                        表情筋トレーニングゲーム
+                                    </Typography>
+                                    <Typography variant="h3" sx={{ fontWeight:'Bold'}}>
+                                        笑撃
+                                    </Typography>
+                                    <Stack direction="row" spacing={2} sx={{ mt:1.6 }}>
+                                        <Chip label="Unity" sx={{ background:yellow[700] }} />
+                                        <Chip label="Python" sx={{ background:green[400] }} />
+                                        <Chip label="Music" sx={{ background:cyan[500] }} />
+                                        <Chip label="Movie" sx={{ background:deepPurple[700] }} />
+                                        <Chip label="Design" sx={{ background:purple['A200'] }} />
+                                    </Stack>
+                                    <Grid item>
+                                        <Grid item sx={{ my:2, lineHeight:'160%'}}>
+                                            <Grid item sx={{mb:1.6}}>
+                                                <Typography variant="body">
+                                                    &ensp;前述のプロジェクト学習「すうぃふと2021」のメンバーから有志を募って、Yahoo社が主催する「Open Hack U」というハッカソンに出場しました。
+                                                    このハッカソンは2週間の制限時間の中で自分たちでテーマの提起から始め、プロダクト開発・プレゼンテーションを行うハッカソンです。
+                                                </Typography>
+                                            </Grid>
+                                            <Grid  item sx={{mb:1.6}}>
+                                                <Typography variant="body">
+                                                    &ensp;このハッカソンで解決したい問題を「自分たちの身の回りのちょっとした困ったこと」
+                                                    という題目でメンバーと話し合った結果「表情が硬くて写真移りが悪いことにコンプレックスがある」という課題が上がりました。
+                                                    そこから「表情のためのゲーミフィケーション」という発想に至り、メンバー間で様々なアイデアが膨らみ出したため「表情筋バトルゲーム」というコンセプトが決定しました。
+                                                </Typography>
+                                            </Grid>
+                                            <Grid  item sx={{mb:1.6}}>
+                                                <Typography variant="body">
+                                                    &ensp;自分はこのサービス開発において、Unityのシーン実装(バトル演出画面)、
+                                                    Python上においてOpenCV及びTensorflowを用いたカメラからの表情検出とそのパラメータの送信システムを担当しました。
+                                                    また、当ゲームで用いられているBGM(全2曲)の制作、一部イラストの制作、プレゼンテーションに用いたPVの制作を担当しました。
+                                                </Typography>
+                                            </Grid>
+                                            <Grid  item sx={{mb:1.6}}>
+                                                <Typography variant="body">
+                                                    この作品は、出場チーム間で投票が最も多かったチームに与えられる「Happy Hacking賞」を受賞しました。
+                                                </Typography>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid item xs={10} md={5}>
+                                    <Grid height="100%" container direction="column" justifyContent="space-evenly">
+                                        <Grid xs="auto" marginY={2}>
+                                            <Stack direction="row" spacing={1} sx={{width:'100%', justifyContent:'center'}}>
+                                                <img alt="SHOGEKI_LOGO" src={SHOGEKI_LOGO_IMG} style={{ width:'75%'}}/>
+                                            </Stack>
+                                        </Grid>
+                                        <Grid xs="auto">
+                                            <Grid item xs="auto" position="relative">
+                                                <Button onClick={handleClickOpen}>
+                                                        <img alt="SHOGEKI_PV" src={SHOGEKI_THUMBNAIL_IMG} style={{ width:'100%', border:'solid 2px'}} />
+                                                        <Icon component={PlayCircleFilled} sx={{color:'white',margin:0, width:'5rem', height:'5rem', position:'absolute', right:'50%', top:'50%', transform: 'translate(50%, -50%)'}} />
+                                                </Button>
+                                            </Grid>
+                                            <VideoModal open={open} onClose={handleClose}>
+                                                <Grid item justifyContent="center" sx={{mx:"auto", my:10}}>
+                                                    <iframe title='sho-geki_pv' src="https://drive.google.com/file/d/1IEXLKEt1FIYmoBjXjRCXHqMFd63C-drk/preview" width="80%" height="562.5" allow="autoplay" justifyContent="center" margin="0 auto"/>
+                                                </Grid>
+                                            </VideoModal>
+                                        </Grid>
+                                        <Grid xs="auto">
+                                            <Stack direction="row" spacing={6} justifyContent='center' sx={{py:{xs:4, md:"auto"}}}>
+                                                <a href="https://youtu.be/mxQEbQwfGRI?t=4947" title="笑撃 紹介動画" target="_blank" rel="noopener noreferrer" >
+                                                    <Icon component={Link} sx = {{width:'4rem', height:'4rem', color:grey[300], p:1.5,background:'rgb(0, 0, 0)', borderRadius:'100%'}} />
+                                                </a>
+                                                <a href="https://youtu.be/mxQEbQwfGRI?t=14180" title="笑撃 デモンストレーション" target="_blank" rel="noopener noreferrer" >
+                                                    <Icon component={Link} sx = {{width:'4rem', height:'4rem', color:grey[300], p:1.5,background:'rgb(0, 0, 0)', borderRadius:'100%'}} />
+                                                </a>
+                                            </Stack>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Paper>
