@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.9f2321e4.css",
-    "main.js": "/static/js/main.d1df7a64.js",
+    "main.js": "/static/js/main.3749d43c.js",
     "static/js/787.228045fc.chunk.js": "/static/js/787.228045fc.chunk.js",
     "static/media/d-pBot.mp4": "/static/media/d-pBot.d827e40d0a396706057d.mp4",
     "static/media/amabie_anm.gif": "/static/media/amabie_anm.5a9e9c30cf5c42cc0593.gif",
     "static/media/IMG_2105.JPG": "/static/media/IMG_2105.c1e1ab3a499a08cdda6a.JPG",
     "static/media/d-pBot_img.jpg": "/static/media/d-pBot_img.57cc2e18860ac1381998.jpg",
+    "static/media/sho-geki_thumbnail.png": "/static/media/sho-geki_thumbnail.911a177d7176c6449f40.png",
     "static/media/DIDIT_IMG.png": "/static/media/DIDIT_IMG.385a4da10ddf4fe284e6.png",
+    "static/media/sho-geki_logo.png": "/static/media/sho-geki_logo.940e48b1bc0c432367e4.png",
     "static/media/amabie_prj.png": "/static/media/amabie_prj.559845450766ac313a9c.png",
     "static/media/Repair_it.png": "/static/media/Repair_it.6e0fcfce8cd9dddd37fd.png",
     "static/media/RALAF_Flyer.png": "/static/media/RALAF_Flyer.63443dbec0891be4e63b.png",
@@ -15,11 +17,11 @@
     "static/media/icon.png": "/static/media/icon.30c731c2d1cf0f9b68c0.png",
     "index.html": "/index.html",
     "main.9f2321e4.css.map": "/static/css/main.9f2321e4.css.map",
-    "main.d1df7a64.js.map": "/static/js/main.d1df7a64.js.map",
+    "main.3749d43c.js.map": "/static/js/main.3749d43c.js.map",
     "787.228045fc.chunk.js.map": "/static/js/787.228045fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f2321e4.css",
-    "static/js/main.d1df7a64.js"
+    "static/js/main.3749d43c.js"
   ]
 }
